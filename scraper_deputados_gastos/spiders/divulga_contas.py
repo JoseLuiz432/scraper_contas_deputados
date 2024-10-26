@@ -26,7 +26,7 @@ class DivulgaContasSpider(scrapy.Spider):
         settings=get_project_settings()
  
         self.options = webdriver.ChromeOptions()
-        self.options.add_argument("--headless")
+        # self.options.add_argument("--headless")
         self.options.add_argument("--window-size=1920,1080")
         self.options.add_argument('user-agent={0}'.format(settings.get('USER_AGENT')))
 
